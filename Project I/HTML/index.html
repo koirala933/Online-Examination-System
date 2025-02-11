@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login-Register</title>
+    <link rel="stylesheet" href="../CSS/style.css"> 
+</head>
+<body>
+    <div class="full-page">
+    <div class="navigation-bar">
+  <div class="logo">
+  <a href='photography.html'>Online Examination..</a>
+ </div>
+ <nav>
+ <ul id='MenuItems'>
+  <li><a href='#'>Home</a></li>
+  <li><a href='#'>About Us</a></li>
+  <li><a href='#'>Contact</a></li>
+   </ul>
+</nav>
+ </div>
+ <div class="row">
+<div class="form-box">
+<div class="form">
+<form action="../PHP/Login.php"method="post" id="lgn" >
+ <center><h1 class="main-heading">Login Form</h1></center>
+ <input type="email"placeholder="Enter your email"name="username"required>
+  <input type="password"placeholder="password"name="password"required>
+  <button name="submit">LOGIN</button>
+ <p class="message">Not Registered? <a href="#" onclick="register()">Register</a></p>
+  </form>
+ <form class="register-form" action="../PHP/register.php" id="rgst" method="post">
+ <center><h1 class="main-heading">Register Form</h1></center>
+   <input type="text" placeholder="First Name"name="fname" required>
+   <input type="text" placeholder="Last Name"name="lname" required>
+   <input type="email" placeholder="email-id"name="email" required>
+    <input type="password" placeholder="password"name="password" required>
+    <input type="password" placeholder="cpassword"name="cpassword" required>
+    <button>REGISTER</button>
+     <p class="message">Already Registered?<a href="#" onclick="login()">Login</a>
+        </p>
+      </form>
+       </div>
+     </div>
+   <div class="col-1">
+    <p class='defination'>Good Luck<br>For your Exam..<br></p>
+    </div>
+     </div>
+    </div>
+    <script type="text/javascript" src="../Java Script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>online examination system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="navigation-bar">
+                <div class="logo">
+                    <a href='main-heading'>Online Examination</a>
+                </div>
+                <nav>
+                    <ul id='MenuItems'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About Us</a></li>
+                        <li><a href='#'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form action="../PHP/login.php"method="post" id="lgn" >
+                                <center><h1 class="main-heading">Login Form</h1></center>
+                            <input type="username"placeholder="User name"required>
+                            <input type="password"placeholder="Password"required>
+                            <button >LOGIN</button>
+                            <p class="message">Not Registered? <a href="#" onclick="register()">Register</a></p>
+                        </form>
+                            <form class="register-form" action="../PHP/register.php" id="rgst">
+                                <center><h1 class="main-heading">Register Form</h1></center>
+                            <input type="text" placeholder="First Name" name="fname" required>
+                            <input type="text" placeholder="Last Name" name="lname" required>
+                            <input type="text" placeholder="Email" name="email" required>
+                            <input type="password" placeholder="Password" name="pass" required>
+                            <input type="password" placeholder="Confrim password" name="cpass" required>
+                            <button>REGISTER</button>
+                            <p class="message">Already Registered?<a href="#" onclick="login()">Login</a>
+                            </p>
+                        </form>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-1">
+                    <p class='defination'>  Good Luck <br>for your Exam..<br> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../Java Script/script.js"></script>
+</body>
+</html>
